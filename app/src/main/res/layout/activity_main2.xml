@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="173dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="270dp"
+            android:layout_height="140dp"
+            android:contentDescription="@string/hotel_s_logotype"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515"
+            app:srcCompat="@drawable/logo"
+            tools:layout_conversion_absoluteHeight="213dp"
+            tools:layout_conversion_absoluteWidth="339dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textChooseTown2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_room_text"
+        android:textSize="19sp"
+        tools:layout_conversion_absoluteHeight="61dp"
+        tools:layout_conversion_absoluteWidth="379dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/rooms_list"
+        tools:layout_conversion_absoluteHeight="30dp"
+        tools:layout_conversion_absoluteWidth="258dp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address_text"
+            android:textSize="22sp"
+            tools:layout_conversion_absoluteHeight="22dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="434dp" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/address_text"
+            android:textSize="22sp"
+            tools:layout_conversion_absoluteHeight="22dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="434dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="186dp"
+            android:layout_height="314dp"
+            android:text="@string/address_text"
+            android:textSize="18sp"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="106dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="456dp" />
+
+        <TextView
+            android:id="@+id/textS"
+            android:layout_width="186dp"
+            android:layout_height="312dp"
+            android:text="@string/address_text"
+            android:textSize="18sp"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="106dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="456dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9A020047"
+        android:onClick="onBtnNewClick"
+        android:text="@string/btn_price_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="379dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9A020047"
+        android:onClick="onBtnBackClick"
+        android:text="@string/btn_back_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="379dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+</LinearLayout>

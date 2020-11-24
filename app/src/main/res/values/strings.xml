@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CURTISS</string>
+    <string name="hello_text">Welcome!</string>
+    <string name="choose_text"> Choose a city to find a hotel nearby! </string>
+    <string name="choose_room_text">  Choose to sort by room type. </string>
+    <string name="address_text"> </string>
+    <string name="btn_text">Show address list</string>
+    <string name="btn_price_text">Show price list</string>
+    <string name="btn_next_text">View room prices</string>
+    <string name="btn_back_text">Back to address list</string>
+    <string name="previous_text"> Previous </string>
+    <string name="next_text"> Next </string>
+    <string-array name="cities_list">
+        <item> Kyiv </item>
+        <item> Odesa </item>
+        <item> Lviv </item>
+        <item> Mykolaiv </item>
+        <item> Kherson </item>
+    </string-array>
+    <string-array name="rooms_list">
+    <item> Persons </item>
+    <item> Comfort </item>
+    <item> View </item>
+    </string-array>
+</resources>
